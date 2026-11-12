@@ -1,0 +1,24 @@
+name: 申请加入 Product小分队
+description: 用当前 GitHub 账号申请加入项目私有仓库
+title: "申请加入 Product小分队"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请用希望收到邀请的 GitHub 账号提交。管理员会根据提交账号处理申请，无需填写邮箱。
+        本申请公开可见，请勿填写邮箱、手机号或项目内部资料。
+        审核通过后，你还需要接受私有仓库的协作邀请。
+  - type: textarea
+    id: note
+    attributes:
+      label: 申请说明（选填）
+      description: 可以简单介绍你与小分队的关系或想参与的内容。
+    validations:
+      required: false
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: 确认
+      options:
+        - label: 我使用的是希望加入仓库的 GitHub 账号，并了解申请内容公开可见。
+          required: true
